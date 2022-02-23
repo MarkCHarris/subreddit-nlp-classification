@@ -22,7 +22,7 @@ def count_nan(df):
     Given a DataFrame, gets the name of each column and the number of NaN values in it.
     Returns this information in a new DataFrame, sorted by number of NaN values.
     Leaves out any columns that have no NaN values.
-    If no NaN values found, returns an empty DataFrame.
+    If no NaN values are found, returns an empty DataFrame.
     """
     
     null_counts = df.isna().sum().sort_values(ascending=False)

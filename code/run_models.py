@@ -1,6 +1,6 @@
 """
 This script runs GridsearchCV on multiple models and generates a pickle of each model.
-For each model pickled, filename and model parameters are printed to a file.
+For each model pickled, filename and model parameters are printed to a text file.
 This record makes it easy to select and load pickles for further analysis.
 """
 

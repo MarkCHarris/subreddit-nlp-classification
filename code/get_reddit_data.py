@@ -14,7 +14,7 @@ import datetime
 # Save start time so time elapsed can be printed later.
 t0 = time.time()
 
-# General URL stub for the pushshift reddit API to retrieve comments.
+# General URL stub for Pushshift reddit API to retrieve comments.
 url = 'https://api.pushshift.io/reddit/search/comment'
 
 # Choose Futurology subreddit and maximum number of comments.
@@ -27,7 +27,7 @@ fut_posts = requests.get(url, params).json()['data']
 # Save the post time of the last comment collected so the next request can get the next 100 comments.
 last_fut = fut_posts[-1]['created_utc']
 
-# Repeat the above for the Science subreddit.
+# Repeat the above steps for the Science subreddit.
 params = {
     'subreddit' : 'science',
     'size' : 100

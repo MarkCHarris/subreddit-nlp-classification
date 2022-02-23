@@ -13,7 +13,7 @@ def check_metrics(estimator, X_train, X_test, y_train, y_test):
     Classification report
     ROC AUC score
     ROC AUC curve
-    Confustion Matrix
+    Confusion Matrix
     NOTE: Futurology and Science labels are currently hard-coded.  Should be changed to function parameters before more general use.
     """
     
